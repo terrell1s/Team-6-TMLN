@@ -3,15 +3,15 @@
 @{
     ViewBag.Title = "Delete";
 }
-
+<body style="background-image:url(http://www.presentationmagazine.com/images3/background-design-orange1024.jpg)">
 <h2>Delete</h2>
 
 <h3>Are you sure you want to delete this?</h3>
 <div>
-    <h4>Recipe</h4>
+    <h4 style="font-size:x-large">Recipe</h4>
     <hr />
     <dl class="dl-horizontal">
-        <dt>
+        <dt style="font-size:medium" >
             @Html.DisplayNameFor(model => model.Name)
         </dt>
 
@@ -19,7 +19,7 @@
             @Html.DisplayFor(model => model.Name)
         </dd>
 
-        <dt>
+        <dt style="font-size:medium" >
             @Html.DisplayNameFor(model => model.PrepTime)
         </dt>
 
@@ -27,7 +27,7 @@
             @Html.DisplayFor(model => model.PrepTime)
         </dd>
 
-        <dt>
+        <dt style="font-size:medium">
             @Html.DisplayNameFor(model => model.CookTime)
         </dt>
 
@@ -35,7 +35,7 @@
             @Html.DisplayFor(model => model.CookTime)
         </dd>
 
-        <dt>
+        <dt style="font-size:medium">
             @Html.DisplayNameFor(model => model.NumberServ)
         </dt>
 
@@ -43,7 +43,7 @@
             @Html.DisplayFor(model => model.NumberServ)
         </dd>
 
-        <dt>
+        <dt style="font-size:medium">
             @Html.DisplayNameFor(model => model.Steps)
         </dt>
 
@@ -51,7 +51,7 @@
             @Html.DisplayFor(model => model.Steps)
         </dd>
 
-        <dt>
+        <dt style="font-size:medium">
             @Html.DisplayNameFor(model => model.RecipeType)
         </dt>
 
@@ -70,3 +70,4 @@
         </div>
     }
 </div>
+    </body>

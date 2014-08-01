@@ -1,17 +1,32 @@
 ﻿@model IEnumerable<CookBook.Models.Recipe>
+<head>
+    <title></title>
+    @{
+        ViewBag.Title = "Index";
+    }
+    
 
-@{
-    ViewBag.Title = "Index";
-}
+    <style>
+        .fontstyle{
+            color:
+        }
 
+    </style>
+
+
+
+</head>
+
+<body style="background-image:url(http://www.presentationmagazine.com/images3/background-design-orange1024.jpg)"
+     > 
 <h2>Index</h2>
 
-<p>
+<p style="font-size:x-large">
     @Html.ActionLink("Create New", "Create")
 </p>
 @using (Html.BeginForm())
 {
-    <p>
+    <p style="font-size:medium">
         Search by Meal Type: @Html.TextBox("SearchString")
         <input type="submit" value="Search" />
     </p>
@@ -64,3 +79,4 @@
 }
 
 </table>
+    </body>

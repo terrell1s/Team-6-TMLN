@@ -3,14 +3,15 @@
 @{
     ViewBag.Title = "Details";
 }
+<body style="background-image:url(http://www.presentationmagazine.com/images3/background-design-orange1024.jpg)">
 
 <h2>Details</h2>
 
 <div>
-    <h4>Ingredient</h4>
+    <h4 style="font-size:x-large" >Ingredient</h4>
     <hr />
     <dl class="dl-horizontal">
-        <dt>
+        <dt style="font-size:medium">
             @Html.DisplayNameFor(model => model.IngredientName)
         </dt>
 
@@ -24,3 +25,4 @@
     @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
     @Html.ActionLink("Back to List", "Index")
 </p>
+</body>
