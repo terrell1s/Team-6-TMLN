@@ -55,7 +55,7 @@ namespace CookBook.Controllers
             {
                 db.RecipeIngredients.Add(recipeIngredient);
                 db.SaveChanges();
-                return RedirectToAction("Index");
+                return RedirectToAction("Index","Recipe");
             }
 
             ViewBag.IngredientId = new SelectList(db.Ingredients, "Id", "IngredientName", recipeIngredient.IngredientId);
