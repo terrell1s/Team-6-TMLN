@@ -3,15 +3,15 @@
 @{
     ViewBag.Title = "Ingredients";
 }
-
+<body style="background-image:url(http://www.presentationmagazine.com/images3/background-design-orange1024.jpg)">
 <h2>Ingredients</h2>
 
-<p>
+<p style="font-size:x-large">
     @Html.ActionLink("Create New", "Create")
 </p>
 <table class="table">
     <tr>
-        <th>
+        <th style="font-size:medium">
             @Html.DisplayNameFor(model => model.IngredientName)
         </th>
         <th></th>
@@ -31,3 +31,4 @@
 }
 
 </table>
+</body>

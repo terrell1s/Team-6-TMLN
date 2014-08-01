@@ -3,21 +3,21 @@
 @{
     ViewBag.Title = "Details";
 }
-
+<body style="background-image:url(http://www.presentationmagazine.com/images3/background-design-orange1024.jpg)">
 <h2>Details</h2>
 
 <div>
-    <h4>Recipe</h4>
+    <h4 style="font-size:xx-large">Recipe</h4>
     <hr />
     <dl class="dl-horizontal">
-        <dt>
+        <dt style="font-size:medium">
             @Html.DisplayNameFor(model => model.RecipeType)
         </dt>
 
         <dd>
             @Html.DisplayFor(model => model.RecipeType)
         </dd>
-        <dt>
+        <dt style="font-size:medium">
             @Html.DisplayNameFor(model => model.Name)
         </dt>
 
@@ -25,7 +25,7 @@
             @Html.DisplayFor(model => model.Name)
         </dd>
 
-        <dt>
+        <dt style="font-size:medium">
             @Html.DisplayNameFor(model => model.PrepTime)
         </dt>
 
@@ -33,7 +33,7 @@
             @Html.DisplayFor(model => model.PrepTime)
         </dd>
 
-        <dt>
+        <dt style="font-size:medium">
             @Html.DisplayNameFor(model => model.CookTime)
         </dt>
 
@@ -41,7 +41,7 @@
             @Html.DisplayFor(model => model.CookTime)
         </dd>
 
-        <dt>
+        <dt style="font-size:medium">
             @Html.DisplayNameFor(model => model.NumberServ)
         </dt>
 
@@ -49,7 +49,7 @@
             @Html.DisplayFor(model => model.NumberServ)
         </dd>
 
-        <dt>
+        <dt style="font-size:medium">
             @Html.DisplayNameFor(model => model.RecipeIngredients)
         </dt>
         <dd>
@@ -76,7 +76,7 @@
             </table>
         </dd>
 
-        <dt>
+        <dt style="font-size:medium">
             @Html.DisplayNameFor(model => model.Steps)
         </dt>
 
@@ -89,3 +89,4 @@
     @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
     @Html.ActionLink("Back to List", "Index")
 </p>
+</body>
